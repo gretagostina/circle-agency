@@ -1,0 +1,135 @@
+html {
+    background-color: #f2f4fc;
+    font-family: 'Roboto';
+}
+header nav{
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    color: #f2f4fc;
+}
+header {
+    display: flex;
+    width: 59%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 70px;
+}
+header ul{
+    display: flex;
+    padding: 0px;
+}
+header ul li {
+    margin-left: 10px;
+    list-style-type: none;
+}
+header ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+header .logo {
+    width: 60px;
+    height: 18px;
+    background-image: url("https://uploads-ssl.webflow.com/61f7ff5634c23c5bef9d2e54/61f800b7cb56a839fd8ed026_Circle.svg");
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    margin-right: 30%;
+    margin-top: 14px;
+}
+
+header .btn-contact {
+    margin-left: 30%;
+    margin-top: 14px;
+}
+
+#empower {
+     width: 65%;
+    margin: 0 auto;
+    text-align: left;
+    padding-top: 118px;
+    color: black;
+    font-size: 30px;
+}
+
+#empower .approved {
+    margin: auto 5px;
+    margin-right: 50px;
+    object-position:right;
+}
+
+#empower .p{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.companylist {
+    display: -ms-grid;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+}
+
+#company-list {
+    width: 59%;
+    margin: 0 auto;
+}
+
+#company-list img {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#projects h2{
+   text-align: left;
+   
+}
+
+#projects {
+    width: 56%;
+    margin: 0 auto;
+}
+
+#projects .recent{
+    display: flex;
+    text-align: left;
+    position: relative;
+    margin: 0;
+    width: 100%;
+    margin-top: 60px;
+}
+
+#projects .recent div{
+    margin-right: 20px;
+    margin-left: 20px;
+    width: 33%;
+    background-color: white;
+}
+#projects .recent div:first-child
+{
+    margin-left: 0px;
+}
+#projects .recent div:last-child{
+    margin-right: 0px;
+}
+
+#projects img {
+    width: 100%;
+    height: 240px;
+}
+
+#projects{
+    margin-top: 15rem;
+    position: relative;
+}
+
+/*
+paio:
+position: absolut*/
