@@ -21,19 +21,21 @@
                 <li><a href="randomurl.com">Services</a></li>
             </ul>
         </nav>
-        <a class="btn-contact" href="randomurl.com">Contact Us</a>
+        <div class="btn-contact">Contact Us</div>
     </header>
     <!--PARTE 1-->
     <section id="empower">
-        <a class= "approved" img src="/imagenescircle/aproved.png" width="300"/></a>
-        <a class= "card" img src="/imagenescircle/choosecard.png" width="300"/></a>
-        <img src="/imagenescircle/randompal.png"  width="600"/>
-        <h1>empower your business with stunning design!</h1>
-        <h2>Circle is a digital design and development studio. We design and develop astonishing websites and mobile apps.</h2>
-    <ul>
-        <a class="btn-contact">See our work</a>
-        <a class="btn-getin">Get in touch</a>
-    </ul>
+        <div class="left">
+            <h1>empower your business with stunning design!</h1>
+            <h2>Circle is a digital design and development studio. We design and develop astonishing websites and mobile apps.</h2>
+            <div class="btn-contact">See our work</div>
+            <div class="btn-getin">Get in touch</div>
+        </div>
+        <div class="right">
+            <img class="aproved" src="/imagenescircle/aproved.png" width="300"/>
+            <img class="choosecard" src="/imagenescircle/choosecard.png" width="300"/>
+            <img class="randompal" src="/imagenescircle/randompal.png"  width="600"/>
+        </div>
     </section>
     <!--PARTE 2-->
     <section>
@@ -51,78 +53,99 @@
         <div class="recent">
             <div class="one">
                 <img src="/imagenescircle/simplify.jpg" />
-                <h3>simplify</h3>
-                <p>UI design & app development.</p>
-                <a href="randomurl.com">Learn more</a>
+                <div class="project-content">
+                    <h3>simplify</h3>
+                    <p>UI design & app development.</p>
+                    <a href="randomurl.com">Learn more</a>
+                </div>
             </div>
             <div class="two">
                 <img src="/imagenescircle/dashcoin.jpg" />
-                <h3>Dashcoin</h3>
-                <p>web development</p>
-                <a href="randomurl.com">Learn more</a>
+                <div class="project-content">
+                    <h3>Dashcoin</h3>
+                    <p>web development</p>
+                    <a href="randomurl.com">Learn more</a>
+                </div>
             </div>
             <div class="three">
                 <img src="/imagenescircle/vectorify.jpg" />
-                <h3>Vectorify</h3>
-                <p>User experience design</p>
-                <a href="randomurl.com">Learn more</a>
+                <div class="project-content">
+                    <h3>Vectorify</h3>
+                    <p>User experience design</p>
+                    <a href="randomurl.com">Learn more</a>
+                </div>
             </div>
         </div>
     </section>
     <!--PARTE 4-->
-    <section>
-        <img src="imagenescircle/memoji-1.png"/>
-        <img src="imagenescircle/memoji-2.png" />
-        <img src="imagenescircle/memoji-3.png" />
-        <img src="imagenescircle/memoji-4.png" />
-        <img src="imagenescircle/orbit.png" />
-        <img src="imagenescircle/profile.png"/> Kristin Watson booking.com </a>
+    <section id="clients">
         <h1>Hear what our clients have to say</h1>
         <h2>"Circle helped us through every stage of our startup. We really enjoyed working with you."</h2>
+        <a class="memoji1">
+            <img class="emoji" src="imagenescircle/memoji-1.png" alt="memo1">
+        </a>
+        <a class="memoji2">
+            <img class="emoji" src="imagenescircle/memoji-4.png" alt="memo4">
+        </a>
+        <a class="memoji3">
+            <img class="emoji" src="imagenescircle/memoji-3.png" alt="memo3">
+        </a>
+        <a class="memoji4">
+            <img class="emoji" src="imagenescircle/memoji-2.png" alt="memo2">
+        </a> 
+        <div class="booking">
+            <div class="booking-link"></div>  
+            <p class="gurl">Kristin Watson booking.com </p>
+        </div>
     </section>
     <!--PARTE 5-->
-    <section>
+    <section id="services">
         <h1>Our Services</h1>
-        <div>
-            <img src="imagenescircle/pen.svg"/>
-            <h3>User interface design</h3>
-            <p>Circle provides you with a stunning user interface design that is accessible to everyone.</p>
-            <a href="randomurl.com">Learn more</a>
-        </div>
-        <div>
-            <img src="/imagenescircle/arrow.svg" />
-            <h3>user experience design</h3>
-            <p>circle always focuses on delivering the best user experience to your customers</p>
-            <a href="randomurl.com">Learn more</a>
-        </div>
-        <div>
-            <img src="/imagenescircle/application.svg"/>
-            <h3>Application development</h3>
-            <p>We develop high-quality mobile and web applications using the latest technology stack.</p>
-            <a href="randomurl.com">Learn more</a>
+            <div class="services-group">
+                <div class="one">
+                    <img src="imagenescircle/pen.svg"/>
+                    <h3>User interface design</h3>
+                    <p>Circle provides you with a stunning user interface design that is accessible to everyone.</p>
+                    <a href="randomurl.com">Learn more</a>
+                </div>
+                <div class="two">
+                    <img src="/imagenescircle/arrow.svg" />
+                    <h3>user experience design</h3>
+                    <p>circle always focuses on delivering the best user experience to your customers</p>
+                    <a href="randomurl.com">Learn more</a>
+                </div>
+                <div class="three">
+                    <img src="/imagenescircle/application.svg"/>
+                    <h3>Application development</h3>
+                    <p>We develop high-quality mobile and web applications using the latest technology stack.</p>
+                    <a href="randomurl.com">Learn more</a>
+                </div>
         </div>
     </section>
     <!--PARTE 6-->
-    <section>
-        <h1>do you have any questions?</h1>
+    <section id="questions">
+        <h1>Do you have any questions?</h1>
         <p>Let us help you!</p>
-        <label for="email">Enter your email</label>
-        <input type="email" id="email"
-       pattern=".+@globex\.com" size="30" required>
-       <button type="button">Subscribe</button>
+        <div class="correo">
+            <label for="email"></label>
+            <input type="email" id="email" placeholder="Enter your email" required/>
+            <button type="button">Suscribe</button>
+    </div>
     </section>
     <!--PIE DE PAGINA-->
     <footer>
-        <h1>Circle</h1>
-        <p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
-        <ul>
-            <li>Team</li>
-            <li>Services</li>
-            <li>About us</li>
-            <li>Press</li>
-            <li>projects</li>
-            <li>privacy policy</li>
-        </ul>
+        <div class= "left">
+            <div class="logo"> </div>
+            <p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
+        </div>
+        <div class= "grid-links right">
+            <a href="#" class="grid-link">Team</a>
+            <a href="#" class="grid-link">Services</a>
+            <a href="#" class="grid-link">About us</a>
+            <a href="#" class="grid-link">Press</a>
+            <a href="#" class="grid-link">projects</a>
+            <a href="#" class="grid-link">privacy policy</a>    
+        </div>
     </footer>
 </body>
 </html>
