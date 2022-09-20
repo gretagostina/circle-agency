@@ -10,3 +10,4 @@ Casi finiquitado el CSS de la página principal (sólo me falta el media query e
 Mientras tanto, he decidido que éstas cosas son detalles que se pueden pulir más tarde y priorizar las páginas que me quedan pendientes por hacer.
 Estoy bastante segura de que el CSS no está perfecto, pero hoy quedo satisfecha con cómo se ve en comparación a la página original.
 Versión pantallas grandes finiquitado. Me falta por completar versión tablet y versión móvil.
+Páginas añadidas, queda pulir el css (como desplazar la fecha, y detallitos así).
