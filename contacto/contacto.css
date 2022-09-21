@@ -1,0 +1,208 @@
+html {
+    background-color: #f2f4fc;
+    font-family: 'Roboto';
+}
+
+/*ENCABEZADO*/
+
+header nav{
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    color: #f2f4fc;
+}
+header {
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 70px;
+    max-width: 1100px;
+}
+header ul{
+    display: flex;
+    padding: 0px;
+}
+header ul li {
+    margin-left: 10px;
+    list-style-type: none;
+}
+header ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+header .logo {
+    width: 60px;
+    height: 18px;
+    background-image: url("https://uploads-ssl.webflow.com/61f7ff5634c23c5bef9d2e54/61f800b7cb56a839fd8ed026_Circle.svg");
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    margin-right: 30%;
+    margin-top: 14px;
+}
+
+header .btn-contact {
+    margin-left: 30%;
+    padding: 13px 30px 6px 30px;
+    color: white;
+    height:30px;
+    background-color: #072ac8;
+    font-size: 17px;
+    border:none;
+
+}
+
+header .btn-contact:hover {
+    background-color: #292e47;
+    color: white;
+}
+
+/*FORMULARIO*/
+
+#formulario {
+font-family: sans-serif;
+max-width:1100px;
+margin: 0 auto;
+border: 3px solid red;
+margin-top: 150px;
+}
+
+#formulario .name, #formulario .texto {
+width: 100%;
+border: 3px solid green;
+}
+
+#formulario .correo-tel {
+display: flex;
+width:50%;
+border: 3px solid yellow;
+}
+
+#formulario .correo-tel input {
+    margin-top: 28px;
+}
+
+input {
+width:100%;
+padding: 30px 0px;
+margin: 13px 0;
+box-sizing: none;
+height: 70px;
+padding-left: 20px;
+border: 1px none #000;
+background-color: rgba(107, 112, 141, 0.1);
+}
+
+
+
+textarea {
+width:100%;
+height: 150px;
+padding: 12px 20px;
+box-sizing: border-box;
+border: 2px solid #ccc;
+border-radius: 4px;
+background-color: rgba(107, 112, 141, 0.1);
+resize: none;
+margin-bottom: 10px;
+font-size: 18px;
+font-weight: 400px;
+color: #6b706b;  
+font-family: sans-serif;
+}
+
+#formulario h1 {
+    margin-top: 100px;
+    text-transform: capitalize;
+    font-size: 40px;
+    font-weight: 100px;;
+}
+
+button {
+    width: 100%;
+    background-color: #072ac8;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    text-align: center;
+}
+
+button :hover {
+background-color: #292e47;
+color: white;
+}
+
+label {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 400px;
+    color: #6b706b;   
+}
+
+#mensaje-respuesta {
+
+}
+
+/*PIE DE PÁGINA*/
+footer {
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 150px;
+    max-width: 1100px;
+    height: 14rem;
+   /* border: 3px solid green;*/
+}
+
+footer .logo{
+    width: 100px;
+    height: 30px;
+    background-image: url("https://uploads-ssl.webflow.com/61f7ff5634c23c5bef9d2e54/61f800b7cb56a839fd8ed026_Circle.svg");
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+  /*  border: 3px solid magenta;*/
+}  
+
+footer .left {
+    padding-top: 60px;
+    padding-right: 10px;
+
+}
+
+footer .left p {
+    margin: 0 auto;
+    padding-top: 0px;
+    text-align: left;
+    margin-top: 20px;
+   /* border: 3px solid cornflowerblue;*/
+    line-height: 22px;
+    width: 240px;
+}
+  
+footer .grid-links {
+    text-align: center;
+    margin: 0 0 0 auto;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 60px;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+    text-transform: capitalize;
+   /* border: 3px solid yellow;*/
+    height: 110px;
+    margin-top: 65px;
+}
+
+footer .grid-links a{
+    text-decoration: none;
+    color: #6b708d;
+}

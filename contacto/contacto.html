@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Circle Agency</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/contacto/contacto.css" />
+    </head>
+</head>
+<body>
+    <!--ENCABEZADO-->
+    <header>
+        <a class= "logo" href="randomurl.com"></a>
+        <nav>
+            <ul>
+                <li><a href="randomurl.com">Home</a></li>
+                <li><a href="randomurl.com">Projects</a></li>
+                <li><a href="randomurl.com">Services</a></li>
+            </ul>
+        </nav>
+        <div class="btn-contact">Contact Us</div>
+    </header>
+    <!--FORMULARIO-->
+<section id="formulario">
+    <h1>contact us</h1>
+    <form action="/some-url" id="my-form">
+        <div class="name">
+            <label for="nombre">Full name*</label><br>
+            <input type="text" id="nombre" name="nombre" placeholder="Enter your full name">
+        </div>
+        <div class="correo-tel">
+            <label for="correo">Email</label><br>
+            <input type="emailAddress" id="correo" placeholder="Enter your email" /><br>
+            <label for="telefono">Phone</label><br>
+            <input type="tel" id="telefono" name="telefono" placeholder="Enter your phone">
+        </div>
+        <div class="texto">
+            <label for="mensaje">Message*</label><br> 
+            <textarea id="mensaje" name="mensaje" placeholder="Write your message here..."></textarea>
+        </div>
+        <button class="btn-contact" type="submit">submit</button>
+        <div id="mensaje-submit"></div>    
+    </form>
+</section>
+    <!--PIE DE PAGINA-->
+    <footer>
+        <div class= "left">
+        <div class="logo"> </div>
+            <p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
+        </div>
+        <div class= "grid-links right">
+            <a href="#" class="grid-link">Team</a>
+            <a href="#" class="grid-link">Services</a>
+            <a href="#" class="grid-link">About us</a>
+            <a href="#" class="grid-link">Press</a>
+            <a href="#" class="grid-link">projects</a>
+            <a href="#" class="grid-link">privacy policy</a>    
+        </div>
+    </footer>
+    <script src="/contacto/contacto.js"></script>
+</body>
+</html>

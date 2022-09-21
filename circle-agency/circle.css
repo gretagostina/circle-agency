@@ -74,7 +74,7 @@ header .btn-contact:hover {
 }
 #empower .aproved {
     position: absolute;
-    right: 14%;
+    right: 23%;
     top: 750px;
 }
 #empower .choosecard {
@@ -186,7 +186,7 @@ header .btn-contact:hover {
     height: 240px;
 }
 
-/*SECCIÓN 4*/
+/*SECCIÓN CUATRO*/
 
 #clients {
     position: relative;
@@ -278,8 +278,12 @@ header .btn-contact:hover {
     width: 30px;
 }
 
+#clients .booking .client{
+    color: #a2d6f903;
+    font-size: 17px;
+} 
 
-/*SECCIÓN 5*/
+/*SECCIÓN CINCO*/
 
 #services h2{
     text-align: left;
@@ -341,7 +345,7 @@ header .btn-contact:hover {
 }
 
 
-/*SECCIÓN 6*/
+/*SECCIÓN SEIS*/
 
 
 #questions {

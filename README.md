@@ -11,3 +11,7 @@ Mientras tanto, he decidido que éstas cosas son detalles que se pueden pulir m�
 Estoy bastante segura de que el CSS no está perfecto, pero hoy quedo satisfecha con cómo se ve en comparación a la página original.
 Versión pantallas grandes finiquitado. Me falta por completar versión tablet y versión móvil.
 Páginas añadidas, queda pulir el css (como desplazar la fecha, y detallitos así).
+
+DÍA TRES:
+Hoy tocaba puro JS, he tenido que repasar lecciones, ver algún video y aplicar lo aprendido. También he aplicado (en gran parte) lo que hemos visto en zoom, así que hoy voy un poco mejor encaminada. Me pierdo a ratos, por ahora me he centrado en el JS del "contact us".
+A última hora me he puesto a crear carpetas y reubicar elementos porque estaba muy desprolijo y desorganizado. Ahora está mejor.
