@@ -68,16 +68,24 @@ header .btn-contact:hover {
     margin: 0 auto;
 }
 
-#dash .dashboard-group h1,
-#dash .dashboard-group h2{
+#dash h1 {
+    font-size: 60px;
+    margin-bottom: 0px;
+}
+#dash h1::first-letter {
     text-transform: capitalize;
 }
+#dash h2 {
+    margin-bottom: 60px;
+}
+
 #dash .dashboard-group {
     display: flex;
+    position: relative;
 }
 #dash .dashboard-group p {
-    text-align: right;
-    float: right;
+    position: absolute;
+    right: 0;
 }
 
 #dash img {
@@ -163,10 +171,12 @@ header .btn-contact:hover {
     text-align: center;
     padding-top: 30px;
     margin-bottom: 50px;
+    color: #6b708d;
 
 }
 
 #questions .correo{
+    display: flex;
     text-align: center;
     height: 50px;
     width: 50%;
@@ -182,7 +192,7 @@ header .btn-contact:hover {
     margin-bottom: 0px;
     padding-left: 70px;
     background-color: #ecf7ff;
-    color: #292e47;
+    color: black;
     border: none;
     background-position-x: 30px;
     background-position-y: 24px;
@@ -201,6 +211,7 @@ header .btn-contact:hover {
   padding-left: 60px;
   padding-right: 60px;
 }
+
 
 #questions .correo button:hover {
     background-color: #292e47;
@@ -269,53 +280,152 @@ footer .grid-links a{
 
 /*TABLET*/
 @media screen and (max-width: 990px) {
-/* HAMBURGER*/
-header {
-    display: none;
-  }
-  .topnav .logo {
-    width: 60px;
-    height: 18px;
-    background-image: url("https://uploads-ssl.webflow.com/61f7ff5634c23c5bef9d2e54/61f800b7cb56a839fd8ed026_Circle.svg");
-    background-position: 50% 50%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    display: block;
-    margin-left: 20px;
-  }
-  .topnav {
-    display: block;
-    overflow: hidden;
-    background-color: lightgray;
-    position: relative;
-    min-height: 50px;
-  }
-  
-  .topnav #myLinks {
-    display: none;
-  }
-  
-  .topnav a {
-    color: black;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-  }
-  
-  .topnav a.icon {
-    background: gray;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  
-  .topnav a:hover {
-    color: black;
-  }
-  
-  .active {
-    color: black;
-  }
+    /* HAMBURGER*/
+    header {
+        display: none;
+    }
+    .topnav .logo {
+        width: 60px;
+        height: 18px;
+        background-image: url("https://uploads-ssl.webflow.com/61f7ff5634c23c5bef9d2e54/61f800b7cb56a839fd8ed026_Circle.svg");
+        background-position: 50% 50%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: block;
+        margin-left: 20px;
+    }
+    .topnav {
+        display: block;
+        overflow: hidden;
+        background-color: f2f4fc;
+        position: relative;
+        min-height: 50px;
+    }
+    
+    .topnav #myLinks {
+        display: none;
+    }
+    
+    .topnav a {
+        color: black;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+    
+    .topnav a.icon {
+        background: f2f4fc;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    
+    .topnav a:hover {
+        color: black;
+    }
+    
+    .active {
+        color: black;
+    }
+    /*QUESTIONS*/
+    #questions .correo{
+        display: flex;
+        width: 70%;
+    }
+    /*PROJECTS*/ 
+    #projects {
+        margin-bottom: 5em;
+    }
+    #projects .recent{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 80px;
+    }
+    #projects img {
+        object-fit: cover;
+    }
+    #projects .recent div {
+        margin-bottom: 20px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    /*QUESTIONS*/
+    #questions {
+        height: 500px;
+    }
+    #questions h1 {
+        font-size: 30px;
+        padding-top: 90px;
+    }
+    #questions .correo {
+        width: 75%;
+        display: block;
+    }
+    #questions .correo #email {
+        margin: 0;
+        width: 230px;
+        padding: 0;
+        padding-left: 70px;
+    }
+    #questions .correo button {
+        width: 301px;
+        margin-top: 15px;
+    }
+    /*PROJECTS*/
+    #projects {
+        margin-bottom: 6em;
+    }
+    #projects .recent{
+        display: block;
+        margin-bottom: 80px;
+    }
+    #projects h2 {
+        font-size: 28px;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 25px;
+    }
+    #projects img {
+        object-fit: cover;
+    }
+        /*FOOTER*/
+        footer {
+            display: block;
+            margin-top: 20px;
+        }
+        footer .left {
+            display: block;
+            width: 100%;
+        }
+        footer .right {
+            display: block;
+            width: 100%;
+        }
+        footer .logo {
+            margin: 0 auto;
+            margin-bottom: 40px;
+        }
+        footer .left p {
+            text-align: center;
+        }
+        footer .right {
+            width: 395px;
+            padding: 0;
+            margin: 0 auto;
+            margin-top: 30px;
+            text-align: left;
+        }
+        footer .grid-links a{
+            width: 390px;
+            padding: 0;
+            margin: 0 auto;
+            margin-top: 30px;
+            text-align: left;
+            margin-left: 8%;
+            margin-right: 8%;
+        }
 }

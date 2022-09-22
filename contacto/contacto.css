@@ -67,52 +67,62 @@ header .btn-contact:hover {
 font-family: sans-serif;
 max-width:1100px;
 margin: 0 auto;
-border: 3px solid red;
 margin-top: 150px;
 }
 
 #formulario .name, #formulario .texto {
-width: 100%;
-border: 3px solid green;
+    width: 100%;
+    margin-top: 10px;
 }
 
 #formulario .correo-tel {
-display: flex;
-width:50%;
-border: 3px solid yellow;
+    display: flex;
+    width:100%;
+    position: relative;
+}
+
+#formulario .correo-tel .telefono {
+    float: right;
+    position: absolute;
+    right: 0;
+    width: 48%;
+}
+#formulario .correo-tel .correo {
+    width: 48%;
 }
 
 #formulario .correo-tel input {
-    margin-top: 28px;
+    margin-top: 10px;
 }
 
 input {
-width:100%;
-padding: 30px 0px;
-margin: 13px 0;
-box-sizing: none;
-height: 70px;
-padding-left: 20px;
-border: 1px none #000;
-background-color: rgba(107, 112, 141, 0.1);
+    width:100%;
+    padding: 30px 0px;
+    margin: 13px 0;
+    box-sizing: none;
+    height: 70px;
+    padding-left: 20px;
+    border: 1px none #000;
+    background-color: rgba(107, 112, 141, 0.1);
+    height: auto;
+    font-size: 18px;
 }
 
 
 
 textarea {
-width:100%;
-height: 150px;
-padding: 12px 20px;
-box-sizing: border-box;
-border: 2px solid #ccc;
-border-radius: 4px;
-background-color: rgba(107, 112, 141, 0.1);
-resize: none;
-margin-bottom: 10px;
-font-size: 18px;
-font-weight: 400px;
-color: #6b706b;  
-font-family: sans-serif;
+    width:100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    background-color: rgba(107, 112, 141, 0.1);
+    resize: none;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 400px;
+    color: #6b706b;  
+    font-family: sans-serif;
+    border-style: none;
 }
 
 #formulario h1 {
@@ -132,6 +142,8 @@ button {
     margin: 4px 2px;
     cursor: pointer;
     text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 button :hover {
@@ -228,7 +240,7 @@ footer .grid-links a{
       .topnav {
         display: block;
         overflow: hidden;
-        background-color: lightgray;
+        background-color: f2f4fc;
         position: relative;
         min-height: 50px;
       }
@@ -246,7 +258,7 @@ footer .grid-links a{
       }
       
       .topnav a.icon {
-        background: gray;
+        background: f2f4fc;
         display: block;
         position: absolute;
         right: 0;
@@ -261,3 +273,17 @@ footer .grid-links a{
         color: black;
       }
     }
+
+ /*TEL*/
+ @media screen and (max-width: 768px) {
+    #formulario .correo-tel {
+        display: block;
+    }
+    #formulario .correo-tel .telefono {
+        position: relative;
+        width: 100%;
+    }
+    #formulario .correo-tel .correo {
+        width: 100%;
+    }
+ }
