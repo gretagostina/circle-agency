@@ -22,3 +22,12 @@ async function renderArticle() {
     document.getElementById("body").innerHTML = article.body;
 }
 renderArticle();
+
+function hamburger() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }

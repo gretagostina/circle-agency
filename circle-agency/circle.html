@@ -8,10 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="circle.css" />
 </head>
 <body>
-<script src="circle.js"></script>
 
     <!--ENCABEZADO-->
     <header>
@@ -22,15 +22,26 @@
                     <li><a href="randomurl.com">Projects</a></li>
                     <li><a href="randomurl.com">Services</a></li>
                 </ul>
-                <div class="hamburgueso">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
             </nav>
         </div>
-        <div class="btn-contact">Contact Us</div>
+        <a class="btn-contact" href="/contacto/contacto.html">Contact Us</a>
     </header>
+    <!-- Simulate a smartphone / tablet -->
+    <div class="mobile-container">
+    <!-- Top Navigation Menu -->
+        <div class="topnav">
+            <a class= "logo active" href="/circle-agency/circle.html"></a>
+        <div id="myLinks">
+            <a href="randomurl.com">Home</a>
+            <a href="randomurl.com">Projects</a>
+            <a href="randomurl.com">Services</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="hamburger()">
+            <i class="fa fa-bars"></i>
+        </a>
+        </div>
+    <!-- End smartphone / tablet look -->
+    </div>
     <!--PARTE 1-->
     <section id="empower">
         <div class="left">
@@ -157,6 +168,7 @@
             <a href="#" class="grid-link">privacy policy</a>    
         </div>
     </footer>
+    <script src="circle.js"></script>
 </body>
 </html>
 

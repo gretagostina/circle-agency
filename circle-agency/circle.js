@@ -1,4 +1,4 @@
-const hamburgueso = document.querySelector(".hamburgueso");
+/*const hamburgueso = document.querySelector(".hamburgueso");
 const navMenu = document.querySelector(".nav-menu");
 
 hamburgueso.addEventListener("click", () => {
@@ -10,18 +10,25 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
   hamburgueso.classList.remove("active");
   hamburgueso.classList.remove("active");
 }))
+*/
+
+
+
+function hamburger() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+
+
+
 
 
 /*
-
-
-
-
-
-
-
-
-
 
 
 
@@ -133,50 +140,3 @@ console.log(response)*/
 
 
 
-/*diego's way LLAMAR UNA API EXTERNA
-function getHere(){
-fetch("https://jsonplaceholder.typicode.com/posts")
-.then ((response) => response.json())
-.then((res) => {
-  let externalApiData = "";
-
-  res.forEach((post) => {
-    externalApiData += `
-    <div class="card" style="width: 18rem">
-  <img class= "card-img-top" src="someThing.jpg" alt="ruben fucking blades"
-  />
-  <div class="card-body">
-  <h5 class="card-title">${post.title}</h5>
-  <p class= "card-text">
-  ${post.body}
-  </p>
-  </div>
-  </div>
-  `;
-});
-document.querySelector("#samane").innerHTML = externalApiData;
-.catch((error) => console.log(error));
-
-  })
-} 
-  
-  
-  
-  res.json())
-.then (res => console.log (res))
-console.log(response)
-externalAPIdata +=
-<div class="card" style="width: 18rem">
-  <img class= "card-img-top" src="someThing.jpg" alt="ruben fucking blades"
-  />
-  <div class="card-body">
-  <h5 class="card-title">${post.title}</h5>
-  <p class= "card-text">
-  ${post.body}
-  </p>
-  </div>
-  </div>
-  `;
-});
-document.querySelector("#samane").innerHTML = externalApiData;
-.catch((error) => console.log(error));
