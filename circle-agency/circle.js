@@ -1,22 +1,182 @@
-const datos {
-  const getDatos = () => {
-    return datos;
+const hamburgueso = document.querySelector(".hamburgueso");
+const navMenu = document.querySelector(".nav-menu");
 
+hamburgueso.addEventListener("click", () => {
+  hamburgueso.classList.toggle("active");
+  navMenu.classList.toggle("active");
+})
+
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+  hamburgueso.classList.remove("active");
+  hamburgueso.classList.remove("active");
+}))
+
+
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+function recentProjects(){
+  fetch("https://jsonplaceholder.typicode.com/posts")
+  .then ((response) => response.json())
+  .then((res) => {
+    let externalApiData = "";
+  
+    res.forEach((post) => {
+      externalApiData += `
+      <div class="card" style="width: 18rem">
+     <img class= "card-img-top" src="someThing.jpg" alt="ruben fucking blades"
+    />
+    <div class="card-body">
+    <h5 class="card-title">${post.title}</h5>
+    <p class= "card-text">
+    ${post.body}
+    </p>
+    </div>
+    </div>
+    `;
+  });
+  document.querySelector("#recent").innerHTML = externalApiData;
+  .catch((error) => console.log(error));
+  
+    })
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*const recentProjects = async() => {
+
+  try {
+    const respuesta = fetch('https://jsonplaceholder.typicode.com/posts');
+    console.log(respuesta);
+} catch (error();)
+
+
+
+method: 'GET',
+headers: {
+  'X-RapidAPIKey': ''
+  'X-RapidAPI-Host':''
+ }
+};*/
+
+
+/*function addPost(preventForm) {
+ para traer el valor del título y el post :
+  let title = document.querySelector(#title).value;
+  let body = document.querySelector(#body).value;
+  console.log(title)
 }
-console.log(getDatos) 
 
-/*JSON CONTACT */
-document.querySelector ("#monicas-form").addEventListener("submit",addPost);
+fetch ('https://jsonplaceholder.typicode.com/posts', recentProjects {
+ method: "POST"
+  headers: {
+    "Content-type": "application/json";
+    Accept: "application/json, text/plain",
+  },
+  body: JSON.stringify({name: title, body: body}),
+})
 
-const url = "https://jsonplaceholder.typicode.com/comments";
+.then (res => res.json())
+.then (res => console.log (res))
+console.log(response)*/
 
-function addPost(preventForm) {
-    preventForm.preventDefault();
 
-    let name = document.querySelector("#name").value;
-    let email = document.querySelector("#email").value;
-    let phone = document.querySelector("#phone").value;
-    let message = document.querySelector("#message").value;
 
-fetch(url, {
-}
+
+
+
+
+
+
+
+
+/*diego's way LLAMAR UNA API EXTERNA
+function getHere(){
+fetch("https://jsonplaceholder.typicode.com/posts")
+.then ((response) => response.json())
+.then((res) => {
+  let externalApiData = "";
+
+  res.forEach((post) => {
+    externalApiData += `
+    <div class="card" style="width: 18rem">
+  <img class= "card-img-top" src="someThing.jpg" alt="ruben fucking blades"
+  />
+  <div class="card-body">
+  <h5 class="card-title">${post.title}</h5>
+  <p class= "card-text">
+  ${post.body}
+  </p>
+  </div>
+  </div>
+  `;
+});
+document.querySelector("#samane").innerHTML = externalApiData;
+.catch((error) => console.log(error));
+
+  })
+} 
+  
+  
+  
+  res.json())
+.then (res => console.log (res))
+console.log(response)
+externalAPIdata +=
+<div class="card" style="width: 18rem">
+  <img class= "card-img-top" src="someThing.jpg" alt="ruben fucking blades"
+  />
+  <div class="card-body">
+  <h5 class="card-title">${post.title}</h5>
+  <p class= "card-text">
+  ${post.body}
+  </p>
+  </div>
+  </div>
+  `;
+});
+document.querySelector("#samane").innerHTML = externalApiData;
+.catch((error) => console.log(error));

@@ -1,6 +1,7 @@
 html {
     background-color: #f2f4fc;
-    font-family: 'Roboto';
+    font-family: 'Roboto'; sans-serif;
+    color:#292e47;
 }
 
 /*ENCABEZADO*/
@@ -10,6 +11,8 @@ header nav{
     -webkit-box-align: center;
     align-items: center;
     color: #f2f4fc;
+    /*check padding: 0 24px 
+    gap: 60px;*/
 }
 header {
     display: flex;
@@ -27,8 +30,20 @@ header ul li {
     list-style-type: none;
 }
 header ul li a {
-    color: black;
+    font-family: Roboto, sans-serif;
+    color: #6b708d;
+    font-size: 17px;
+    font-weight: 800;
     text-decoration: none;
+    transition: 0.7s ease;
+}
+
+header ul li .color{
+    color:#0082f3;
+}
+
+header ul li a:hover{
+color:#072ac8;    
 }
 
 header .logo {
@@ -59,6 +74,25 @@ header .btn-contact:hover {
     color: white;
 }
 
+header .hamburgueso {
+    display: none;
+    cursor: pointer;
+    padding: 60px;
+    margin:0;
+    box-sizing: border-box;
+    border: 3px solid red;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: grey;
+}
+
 /*SECCIÓN UNO*/
 
 #empower {
@@ -79,18 +113,25 @@ header .btn-contact:hover {
 }
 #empower .choosecard {
     position: absolute;
-    left: 44%;
-    top: 180px;
+    left: 45%;
+    top: 201px;
 }
 #empower h1 {
     text-transform: capitalize;
     font-size: 60px;
     line-height: 80px;
+    font-weight: bold;
 }
 #empower h2 {
     font-size: 20px;
     font-weight: 400;
     width: 460px;
+    color: #6b708d;
+}
+
+#empower .left .botones {
+width: fit-content;
+display: flex;
 }
 
 #empower .left .btn-contact {
@@ -98,15 +139,18 @@ header .btn-contact:hover {
     color: grey;
     height:30px;
     font-size: 17px;
+    font-weight: 600;
     border:none;
 }
 
 #empower .left .btn-getin {
-    padding: 13px 14px 14px 13px;
+    padding: 11px 36px 11px 34px;
     color: white;
     height:30px;
     background-color: #072ac8;
     font-size: 17px;
+    font-weight: 600;
+    margin-left: 20px;
     border:none;
 } 
 #empower .left .btn-getin:hover {
@@ -142,7 +186,12 @@ header .btn-contact:hover {
 /*SECCIÓN TRES*/
 
 #projects h2{
-   text-align: left;   
+   text-align: left;
+   color: #292e47;
+   font-size: 40px;
+   font-weight:900;
+   margin-bottom: 10px;
+   margin-left: 17px;   
 }
 
 #projects {
@@ -285,11 +334,20 @@ header .btn-contact:hover {
 
 /*SECCIÓN CINCO*/
 
+#services h1 {
+    color: #292e47;
+    font-size: 40px;
+    font-weight:900;
+    margin-bottom: 10px;
+    margin-left: 17px;
+}
+
 #services h2{
     text-align: left;
 }
 
- #services {
+
+#services {
     max-width: 1100px;
     margin-left: auto;
     margin-right: auto;
@@ -370,6 +428,7 @@ header .btn-contact:hover {
     text-align: center;
     padding-top: 30px;
     margin-bottom: 50px;
+    color: #6b708d;
 
 }
 
@@ -383,13 +442,13 @@ header .btn-contact:hover {
 
 #questions .correo input{
     margin: 0 auto;
-    background: url(imagenescircle/mail.svg) no-repeat scroll 7px 7px;
+    background: url(/imagenescircle/mail.svg) no-repeat scroll 7px 7px;
     width: 350px;
     height: 80px;
     margin-bottom: 0px;
     padding-left: 70px;
     background-color: #ecf7ff;
-    color: #292e47;
+    color: black;
     border: none;
     background-position-x: 30px;
     background-position-y: 24px;
@@ -473,25 +532,107 @@ footer .grid-links {
 
 footer .grid-links a{
     text-decoration: none;
-    color: #6b708d;
+    color: purple;
 }
 
 
 
 /*MEDIA QUERIE*/
 
+
+/*NORMAL PC*/
+
+@media screen and (max-width: 1880px) {
+    #empower .aproved {
+        position: absolute;
+        right: 14%;
+        top: 750px;
+    }
+}
+
 /*TABLET*/
 @media screen and (max-width: 990px) {
-    #projects .recent{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+
+
+/*HAMBURGUESA*/
+    .navegador {
+        display:block;    
+    }
+    .hamburgueso.active .bar:nth-child(2){
+        opacity:0;
+    }
+    .hamburgueso.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburgueso.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .ul{
+        position: fixed;
+        left: 100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color:magenta;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .li {
+        margin: 16px 0;        
+    }
+    .ul .active{
+        left: 0;
     }
     header .btn-contact {
         display: none;
     }
-    #company-list {
-        -ms-grid-columns: 1fr 1fr;
+
+/*SECCIÓN UNO*/
+
+    #empower {
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 118px;
+        display: grid;
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+
+    }    
+    #empower h2 {
+        text-align: center;
+        margin: 0 auto;
+    }
+    #empower .left .botones {
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    #projects .recent{
+        display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+    #empower .approved {
+       position: absolute;
+       right: 8%;
+       top: 1263px;
+    }
+    #empower .choosecard {
+        margin-top: 40px;
+        position: absolute;
+        left: 11%;
+        top: 93%;
+    }
+    #empower .randompal {
+        margin-top: 60px;
+    }
+
+
+/*SECCIÓN DOS*/
+
+    #company-list {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 60px;
     }
     #company-list img:last-child {
         display: none;
@@ -501,11 +642,27 @@ footer .grid-links a{
         height: 100px;
         position: absolute;
     }
-    #services .services.group{
 
-    }
-    
- }
+
+    /*SECCIÓN TRES*/
+ 
+#projects .recent{
+    /*margin: 0 auto;*/
+    -ms-grid-columns: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 20px; 
+    margin: 0px auto 10px auto;
+    text-align: left;
+    border: 3px solid red;
+
+}
+
+#projects .recent one, 
+#projects .recent two, 
+#projects .recent three, {
+    border: 3px solid green;
+}
+
 
 
  /*TEL*/
